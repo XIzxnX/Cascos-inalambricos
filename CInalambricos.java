@@ -33,4 +33,12 @@ public class CInalambricos{
     public void CambioEstado(){
         enlazadoAOtroDispositivo = !enlazadoAOtroDispositivo;
     }
+    
+    public void ImprimirEstado(){
+        System.out.println("Nombre: " + nombreDispositivo + " | " + "Batería(%): " + bateriaActual + "%" + " | " + "Enlazado: " + enlazadoAOtroDispositivo);
+    }
+    
+    public String MostrarEstado(){
+        return "Nombre: " + nombreDispositivo + " | " + "Batería(%): " + bateriaActual + "%" + " | " + "Enlazado: " + enlazadoAOtroDispositivo;
+    }
 }
